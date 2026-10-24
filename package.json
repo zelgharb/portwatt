@@ -1,0 +1,33 @@
+{
+  "name": "portwatt-sme",
+  "private": true,
+  "version": "1.0.0",
+  "description": "PortWatt SME - Système de Monitoring Énergétique ISO 50001 - Port d'Agadir (DEPA)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:surge": "vite build && cp dist/index.html dist/200.html && npx -y surge ./dist https://portwatt-depa.surge.sh",
+    "server": "node server/index.js"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
